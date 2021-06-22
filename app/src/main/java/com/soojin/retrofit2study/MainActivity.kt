@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val username = "soso"
         val password = "soso123"
 
-        ServerConnector.getSignUp(nickname, username, password)
+//        ServerConnector.getSignUp(nickname, username, password)
 //        ServerConnector.getSignIn("pcm123", "password123")
     }
 }

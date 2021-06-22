@@ -1,5 +1,6 @@
 package com.soojin.retrofit2study.api.`interface`
 
+import com.soojin.retrofit2study.api.model.getArticles.GetArticlesRes
 import com.soojin.retrofit2study.api.model.getSignIn.GetSignInRes
 import com.soojin.retrofit2study.api.model.getSignup.GetSignUpRes
 import retrofit2.Call
@@ -15,4 +16,7 @@ interface APIServer {
     fun getSignUp(@Query("nickname") nickname: String,
                   @Query("username") username: String,
                   @Query("password") password: String): Call<GetSignUpRes>
+
+    @GET("http://gaobook.dothome.co.kr/api/articles.php")
+    fun getArticles(): Call<GetArticlesRes>
 }

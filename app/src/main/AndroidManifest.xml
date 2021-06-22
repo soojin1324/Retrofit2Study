@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".MainApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Facebook"
@@ -12,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Retrofit2Study"
         android:usesCleartextTraffic="true">
+        <activity android:name=".scenarios.articles.ArticlesActivity"></activity>
+        <activity android:name=".scenarios.signup.SignUpActivity" />
         <activity android:name=".scenarios.signin.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

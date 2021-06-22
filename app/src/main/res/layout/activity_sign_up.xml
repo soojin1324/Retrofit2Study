@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scenarios.signup.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/iv_signUp_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_sginIn_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FaceBook"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_signUp_logo"
+        />
+
+    <EditText
+        android:id="@+id/edt_signUp_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#25aaff"
+        android:textSize="17dp"
+        android:hint="nickname"
+        android:inputType="textPersonName"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_sginIn_title"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:id="@+id/edt_signUp_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#25aaff"
+        android:textSize="17dp"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_signUp_nickname"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_signUp_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#25aaff"
+        android:textSize="17dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_signUp_username"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="15dp"
+        android:paddingVertical="15dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_signUp_password"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_signUp_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_signUp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account?"
+            android:textSize="15dp"
+            android:textColor="#333333"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create a new account"
+            android:textColor="#25aaff"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
